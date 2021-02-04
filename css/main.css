@@ -1,0 +1,75 @@
+/* Main */
+* {
+	-webkit-box-sizing: border-box;
+	-mox-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #c95a5d;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+/*
+ * Main banner elem
+ * 1. Make sure the original is higher z-index so when scrolling up fast, the clone goes underneith.
+    Prevents visual overlap.
+ */
+.sticky__menu {
+	width: 100%;
+	height: 70px;
+	position: relative;
+	/* 1 */
+	z-index: 2;
+	/* 1 */
+	background: red;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	color: #fff;
+}
+
+nav {
+	padding: 0 50px;
+}
+
+.sticky__menu a {
+	color: #fff;
+}
+
+.sticky__menu a:hover {
+	color: #7C2B2D;
+}
+
+.logo {
+	float: left;
+	margin: 0;
+	font-size: 20px;
+	line-height: 70px;
+}
+
+.nav {
+	float: right;
+	height: 40px;
+	padding: 0;
+	margin: 15px 0 0;
+}
+
+.nav__item {
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.nav__item--btn {
+	display: inline-block;
+	width: auto;
+	padding: 0 20px;
+	font-size: 14px;
+	line-height: 38px;
+}
